@@ -1,0 +1,28 @@
+.btnAdd {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding-bottom: 10px;
+}
+
+.header {
+    font-weight: 500;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.textBtn {
+    font-weight: 400;
+    padding-right: 10px;
+}

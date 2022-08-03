@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutAlign="space-around center">
+    <span class="header">Banco Pan</span>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-around center">
+    <button class="btnAdd" (click)="adicionaUsuario()">
+        <span class="textBtn">Adicionar usuário</span> <mat-icon>add_circle_outline</mat-icon>
+    </button>
+</div>
+<br>
+<div fxLayout="row" fxLayoutAlign="space-around center" *ngFor="let user of users; let i = index">
+    <app-card [nome]="user.name" [cpf]="user.cpf" [email]="user.email" [phone]="user.phone" (click)="clickCard($event, i)" fxFlex="80%" class="card"></app-card>
+</div>

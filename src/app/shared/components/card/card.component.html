@@ -1,0 +1,26 @@
+<mat-card class="card">
+    <div fxFlex="100%">
+        <div fxLayout="column" fxFlex="80%">
+            <strong class="textName">
+                {{ nome }}
+            </strong>
+            
+            <div fxLayoutAlign="left">
+                <span class="textDesc">CPF:</span> {{ cpf | cpf }}
+            </div>
+
+            <div fxLayoutAlign="left">
+                <span class="textDesc">E-mail:</span> {{ email }}
+            </div>
+
+            <div fxLayoutAlign="left">
+                <span class="textDesc">Telefone:</span> {{ phone | phone }}
+            </div>
+        </div>
+
+        <div fxLayout="column" fxLayoutAlign="space-evenly end" fxFlex="20%">
+            <button class="btnEdit" (click)="clickBotoes('edit')"><mat-icon>person_outline</mat-icon></button>
+            <button class="btnDelete" (click)="clickBotoes('delete')"><mat-icon>clear</mat-icon></button>
+        </div>
+    </div>
+</mat-card>

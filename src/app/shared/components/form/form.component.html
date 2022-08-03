@@ -1,0 +1,46 @@
+<div fxFlex="100%" fxFlexFill>
+    <div fxLayoutAlign="space-between">
+
+        <strong mat-dialog-title>{{ data.action }} usuário</strong>
+        <button mat-dialog-close class="btnClose"><mat-icon>clear</mat-icon></button>
+    </div>
+        
+    <mat-divider></mat-divider>
+    
+    <form autocomplete="off" [formGroup]="cadastro" (ngSubmit)="submit()" id="cadastro">
+        <div mat-dialog-content>
+                <div>
+                    <mat-form-field appearance="standard">
+                        <mat-label>Nome completo (sem abreviação)</mat-label>
+                        <input matInput placeholder="Nome" formControlName="name" id="name">
+                    </mat-form-field>
+                    </div>
+                    <p>
+                    <mat-form-field appearance="standard">
+                        <mat-label>E-mail</mat-label>
+                        <input matInput placeholder="teste@teste.com" formControlName="email" id="email">
+                    </mat-form-field>
+                    </p>
+                    <p>
+                    <mat-form-field appearance="standard">
+                        <mat-label>CPF</mat-label>
+                        <input matInput placeholder="999.999.999-99" formControlName="cpf" id="cpf" mask="000.000.000-00">
+                    </mat-form-field>
+                    </p>
+                    <p>
+                    <mat-form-field appearance="standard">
+                        <mat-label>Telefone</mat-label>
+                        <input matInput placeholder="(99) 99999-9999" formControlName="phone" id="phone" mask="(00) 00000-0000">
+                    </mat-form-field>
+                    </p>
+        </div>
+
+        <mat-divider></mat-divider>
+        
+        <div fxLayoutAlign="center">
+            <div mat-dialog-actions>
+                <button mat-dialog-close type="submit" [disabled]="!cadastro.valid" class="btnUpdate">{{ data.action }} usuário</button>
+            </div>
+        </div>
+    </form>
+</div>

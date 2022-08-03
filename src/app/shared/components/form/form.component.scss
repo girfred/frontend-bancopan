@@ -1,0 +1,43 @@
+
+.mat-divider {
+    margin: 0 -24px !important;
+}
+mat-form-field {
+    width: 100%;
+}
+.btnClose{
+    border-radius: 2px;
+    font-size: 2px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnUpdate {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnUpdate:disabled {
+    background-color: #ccc;
+}
+
+.mat-icon {
+    overflow: visible;
+}
