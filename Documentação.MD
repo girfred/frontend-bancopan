@@ -82,3 +82,6 @@
 	- cpf: required, minLength(11), maxLength(11)
   - O botão só fica enable quando todos os campos estiverem válidos
 - Clicando em 'Atualizar Usuário', atualiza o array de usuários pelo index do usuário em questão e insere no local storage.
+
+### Exclusão
+- Ao clicar no icone vermelho ao lado direito das informações, remove o usuário em questão pelo index no array de usuários e insere no local storage.
